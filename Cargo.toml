@@ -1,0 +1,16 @@
+[package]
+name = "extract-h264-from-mp4-mdat"
+version = "0.1.0"
+edition = "2021"
+description = "extract the first MP4 mdat box as an H264 file"
+license = "MIT"
+authors = ["Andrew Straw <strawman@astraw.com>"]
+
+[dependencies]
+byteorder = "1"
+dbg_hex = "0.2.0"
+
+eyre = "0.6.12"
+mp4 = "0.14.0"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
